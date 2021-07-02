@@ -100,7 +100,7 @@ class Navbars extends React.Component {
                       </span>
                     </NavLink>
                   </NavItem>
-                  <UncontrolledDropdown nav inNavbar>
+                  {/* <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav className="nav-link-icon">
                       <i className="ni ni-settings-gear-65" />
                       <span className="nav-link-inner--text d-lg-none">
@@ -131,7 +131,7 @@ class Navbars extends React.Component {
                         Something else here
                       </DropdownItem>
                     </DropdownMenu>
-                  </UncontrolledDropdown>
+                  </UncontrolledDropdown> */}
                 </Nav>
               </UncontrolledCollapse>
             </Container>
@@ -166,12 +166,12 @@ class Navbars extends React.Component {
                 </div>
                 <Nav className="ml-lg-auto" navbar>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="http://localhost:3000/" onClick={e => e.preventDefault()}>
                       Discover <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#http://localhost:3000/profile-page" onClick={e => e.preventDefault()}>
                       Profile
                     </NavLink>
                   </NavItem>

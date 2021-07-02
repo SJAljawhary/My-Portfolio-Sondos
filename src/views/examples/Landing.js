@@ -18,13 +18,19 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
-import promo1 from "assets/img/theme/promo-1.png";
-import cardImg from "assets/img/theme/img-1-1200x1000.jpg";
+// import promo1 from "assets/img/theme/promo-1.png";
+// import cardImg from "assets/img/theme/img-1-1200x1000.jpg";
 import ill2 from "assets/img/ill/ill-2.svg";
-import team1 from "assets/img/theme/team-1-800x800.jpg";
-import team2 from "assets/img/theme/team-2-800x800.jpg";
-import team3 from "assets/img/theme/team-3-800x800.jpg";
-import team4 from "assets/img/theme/team-4-800x800.jpg";
+// import team1 from "assets/img/theme/team-1-800x800.jpg";
+// import team2 from "assets/img/theme/team-2-800x800.jpg";
+// import team3 from "assets/img/theme/team-3-800x800.jpg";
+// import team4 from "assets/img/theme/team-4-800x800.jpg";
+import job from "assets/img/theme/job.png";
+import salmon from "assets/img/theme/salmon.png";
+import flowers from "assets/img/theme/flowers.png";
+import skill from "assets/img/theme/skill.jpg"
+
+
 
 // reactstrap components
 import {
@@ -49,6 +55,7 @@ import CardsFooter from "components/Footers/CardsFooter.js";
 
 // index page sections
 import Download from "../IndexSections/Download.js";
+// import { left } from "@popperjs/core";
 
 class Landing extends React.Component {
   state = {};
@@ -81,35 +88,24 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        A beautiful Design System{" "}
-                        <span>completed with examples</span>
+                        High recommended tech use{" "}
+                        <span>What excited me ?</span>
                       </h1>
                       <p className="lead text-white">
-                        The design system comes with four pre-built pages to
-                        help you get started faster. You can change the text and
-                        images and you're good to go.
+                       Since in these days everything depends on technology , I'm so excited about what we can reach and do using it , like what we do konw "learning Programming" online and it become the most effecient method in communicating with others in whole the world ! 
                       </p>
                       <div className="btn-wrapper">
-                        <Button
-                          className="btn-icon mb-3 mb-sm-0"
-                          color="info"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <i className="fa fa-code" />
-                          </span>
-                          <span className="btn-inner--text">Components</span>
-                        </Button>
+
                         <Button
                           className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                           color="default"
-                          href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                          href="https://github.com/SJAljawhary?tab=repositories"
                         >
                           <span className="btn-inner--icon mr-1">
                             <i className="ni ni-cloud-download-95" />
                           </span>
                           <span className="btn-inner--text">
-                            Download React
+                            My Projects
                           </span>
                         </Button>
                       </div>
@@ -145,107 +141,89 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
+                            <i className="fa fa-search" />
                           </div>
                           <h6 className="text-primary text-uppercase">
-                            Download Argon
-                          </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
+                            Freelancers</h6>
+                            <img
+                            alt="..."
+                            style = {{width :'200px'}}
+                            src={job}
+                          />
                           <div>
                             <Badge color="primary" pill className="mr-1">
-                              design
+                              Find Job
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              system
+                              Creative
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              creative
+                              Design
                             </Badge>
                           </div>
-                          <Button
-                            className="mt-4"
-                            color="primary"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
+                          <a href="https://freelance-pro.github.io/get-job/" >🌎</a>
+
                         </CardBody>
                       </Card>
                     </Col>
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="ni ni-istanbul" />
+                        <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                            <i className="fa fa-cookie" />
                           </div>
                           <h6 className="text-success text-uppercase">
-                            Build Something
+                            Salmon Cookies
                           </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
+                          <img
+                            alt="..."
+                            style = {{width :'200px'}}
+                            src={salmon}
+                          />
+                          {/* <p Pats salmon cookies have many branches over the world /> */}
                           <div>
                             <Badge color="success" pill className="mr-1">
-                              business
+                              Business
                             </Badge>
                             <Badge color="success" pill className="mr-1">
-                              vision
+                              Cookies
                             </Badge>
                             <Badge color="success" pill className="mr-1">
-                              success
+                              Success
                             </Badge>
                           </div>
-                          <Button
-                            className="mt-4"
-                            color="success"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
+                          <a href="https://sjaljawhary.github.io/cookie-stand/">🌎</a>
+
                         </CardBody>
                       </Card>
                     </Col>
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-planet" />
+                      <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                            <i className="fa fa-search" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                            Prepare Launch
-                          </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
+                           Flowers Shop  </h6>
+                           <img
+                            alt="..."
+                            style = {{width :'200px'}}
+                            src={flowers}
+                          />
+                    
                           <div>
                             <Badge color="warning" pill className="mr-1">
-                              marketing
+                              Marketing
                             </Badge>
                             <Badge color="warning" pill className="mr-1">
-                              product
+                              Product
                             </Badge>
                             <Badge color="warning" pill className="mr-1">
-                              launch
+                              Celebrate
                             </Badge>
                           </div>
-                          <Button
-                            className="mt-4"
-                            color="warning"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
+                          <a href="https://sjaljawhary.github.io/exam2/">🌎</a>
+
                         </CardBody>
                       </Card>
                     </Col>
@@ -254,83 +232,7 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <section className="section section-lg">
-            <Container>
-              <Row className="row-grid align-items-center">
-                <Col className="order-md-2" md="6">
-                  <img
-                    alt="..."
-                    className="img-fluid floating"
-                    src={promo1}
-                  />
-                </Col>
-                <Col className="order-md-1" md="6">
-                  <div className="pr-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
-                      <i className="ni ni-settings-gear-65" />
-                    </div>
-                    <h3>Awesome features</h3>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
-                    <ul className="list-unstyled mt-5">
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-settings-gear-65" />
-                            </Badge>
-                          </div>
-                          <div>
-                            <h6 className="mb-0">
-                              Carefully crafted components
-                            </h6>
-                          </div>
-                        </div>
-                      </li>
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-html5" />
-                            </Badge>
-                          </div>
-                          <div>
-                            <h6 className="mb-0">Amazing page examples</h6>
-                          </div>
-                        </div>
-                      </li>
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-satisfied" />
-                            </Badge>
-                          </div>
-                          <div>
-                            <h6 className="mb-0">
-                              Super friendly support team
-                            </h6>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </Col>
-              </Row>
-            </Container>
-          </section>
+          
           <section className="section bg-secondary">
             <Container>
               <Row className="row-grid align-items-center">
@@ -338,7 +240,7 @@ class Landing extends React.Component {
                   <Card className="bg-default shadow border-0">
                     <CardImg
                       alt="..."
-                      src={cardImg}
+                      src={skill}
                       top
                     />
                     <blockquote className="card-blockquote">
@@ -358,14 +260,9 @@ class Landing extends React.Component {
                           points="0,42 583,95 683,0 0,95"
                         />
                       </svg>
-                      <h4 className="display-3 font-weight-bold text-white">
-                        Design System
-                      </h4>
+                  
                       <p className="lead text-italic text-white">
-                        The Arctic Ocean freezes every winter and much of the
-                        sea-ice then thaws every summer, and that process will
-                        continue whatever happens.
-                      </p>
+                      If you are a computer science student or doing a course to become a software engineer or a software developer, there are some technical skills you need to have to become a good programmer. Technology is vast and there are so many tools, platforms, languages coming out in the market. It doesn’t matter if you are an experienced programmer or a newbie programmer, as a modern developer you should have knowledge that how to integrate the modern technologies and other technical stuff in your work to make a good product or software.                      </p>
                     </blockquote>
                   </Card>
                 </Col>
@@ -374,29 +271,30 @@ class Landing extends React.Component {
                     <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
                       <i className="ni ni-settings" />
                     </div>
-                    <h3>Our customers</h3>
+                    <h3>My Skills</h3>
                     <p className="lead">
-                      Don't let your uses guess by attaching tooltips and
-                      popoves to any element. Just make sure you enable them
-                      first via JavaScript.
+                    As a Computer programmers we write code through the use of computer languages, such as CSS,HTML and JavaScript. We create instructions that enable computers to generate meaningful output. This job generally requires the ability to do the following work:
                     </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
-                    <a
-                      className="font-weight-bold text-warning mt-5"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      A beautiful UI Kit for impactful websites
-                    </a>
+                    <li>
+                    Working in a team.
+                    </li>
+                    <li>
+                    Working under pressure.
+                    </li>
+                    <li>
+                    Know computer languages.
+                    </li>
+                    <li>
+                    Write computer programs.
+                    </li>
+                    <li>
+                    Update computer programs.
+                    </li>
+                    <li>
+                    Collaborate with other programmers.
+                    </li>
+                  
+               
                   </div>
                 </Col>
               </Row>
@@ -422,11 +320,9 @@ class Landing extends React.Component {
                       </div>
                     </div>
                     <div className="pl-4">
-                      <h4 className="display-3 text-white">Modern Interface</h4>
+                      <h4 className="display-3 text-white">Programming Languages</h4>
                       <p className="text-white">
-                        The Arctic Ocean freezes every winter and much of the
-                        sea-ice then thaws every summer, and that process will
-                        continue whatever.
+                      Thousands of different programming languages have been created, and more are being created every year, in this course we have learned some of them like :
                       </p>
                     </div>
                   </div>
@@ -435,25 +331,19 @@ class Landing extends React.Component {
                       <div className="d-flex px-3">
                         <div>
                           <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
-                            <i className="ni ni-satisfied" />
+                            {/* <i className="fa fa-bring-front" /> */}
+                            
                           </div>
                         </div>
                         <div className="pl-4">
                           <h5 className="title text-success">
-                            Awesome Support
+                            Front End 
                           </h5>
-                          <p>
-                            The Arctic Ocean freezes every winter and much of
-                            the sea-ice then thaws every summer, and that
-                            process will continue whatever.
-                          </p>
-                          <a
-                            className="text-success"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </a>
+                           <li>React</li>
+                           <li>JavaScript</li>
+                           <li>HTML</li>
+                           <li>CSS</li>
+                        
                         </div>
                       </div>
                     </CardBody>
@@ -463,25 +353,16 @@ class Landing extends React.Component {
                       <div className="d-flex px-3">
                         <div>
                           <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                            <i className="ni ni-active-40" />
+                            <i className="fa fa-send-back"/>
                           </div>
                         </div>
                         <div className="pl-4">
                           <h5 className="title text-warning">
-                            Modular Components
-                          </h5>
-                          <p>
-                            The Arctic Ocean freezes every winter and much of
-                            the sea-ice then thaws every summer, and that
-                            process will continue whatever.
-                          </p>
-                          <a
-                            className="text-warning"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </a>
+                           Back End    </h5>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                     
                         </div>
                       </div>
                     </CardBody>
@@ -507,190 +388,7 @@ class Landing extends React.Component {
             </div>
           </section>
           <section className="section section-lg">
-            <Container>
-              <Row className="justify-content-center text-center mb-lg">
-                <Col lg="8">
-                  <h2 className="display-3">The amazing Team</h2>
-                  <p className="lead text-muted">
-                    According to the National Oceanic and Atmospheric
-                    Administration, Ted, Scambos, NSIDClead scentist, puts the
-                    potentially record maximum.
-                  </p>
-                </Col>
-              </Row>
-              <Row>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={team1}
-                      style={{ width: "200px" }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">Ryan Tompson</span>
-                        <small className="h6 text-muted">Web Developer</small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="warning"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-twitter" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="warning"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-facebook" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="warning"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-dribbble" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={team2}
-                      style={{ width: "200px" }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">Romina Hadid</span>
-                        <small className="h6 text-muted">
-                          Marketing Strategist
-                        </small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="primary"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-twitter" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="primary"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-facebook" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="primary"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-dribbble" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={team3}
-                      style={{ width: "200px" }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">Alexander Smith</span>
-                        <small className="h6 text-muted">UI/UX Designer</small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="info"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-twitter" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="info"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-facebook" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="info"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-dribbble" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={team4}
-                      style={{ width: "200px" }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">John Doe</span>
-                        <small className="h6 text-muted">Founder and CEO</small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="success"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-twitter" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="success"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-facebook" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="success"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fa fa-dribbble" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-            </Container>
+         
           </section>
           <section className="section section-lg pt-0">
             <Container>
@@ -699,12 +397,9 @@ class Landing extends React.Component {
                   <Row className="align-items-center">
                     <Col lg="8">
                       <h3 className="text-white">
-                        We made website building easier for you.
-                      </h3>
+                          LTUC College  </h3>
                       <p className="lead text-white mt-3">
-                        I will be the leader of a company that ends up being
-                        worth billions of dollars, because I got the answers. I
-                        understand culture.
+                   Luminus Technical University College (LTUC) is a member of Luminus Education and originally established under the name of Al Quds College.You can join to any of their courses to be more professional and creative.
                       </p>
                     </Col>
                     <Col className="ml-lg-auto" lg="3">
@@ -712,10 +407,10 @@ class Landing extends React.Component {
                         block
                         className="btn-white"
                         color="default"
-                        href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                        href="http://www.ltuc.com/"
                         size="lg"
                       >
-                        Download React
+                        Read About
                       </Button>
                     </Col>
                   </Row>
@@ -725,49 +420,11 @@ class Landing extends React.Component {
           </section>
           <section className="section section-lg bg-gradient-default">
             <Container className="pt-lg pb-300">
-              <Row className="text-center justify-content-center">
-                <Col lg="10">
-                  <h2 className="display-3 text-white">Build something</h2>
-                  <p className="lead text-white">
-                    According to the National Oceanic and Atmospheric
-                    Administration, Ted, Scambos, NSIDClead scentist, puts the
-                    potentially record low maximum sea ice extent tihs year down
-                    to low ice.
-                  </p>
-                </Col>
-              </Row>
+              
               <Row className="row-grid mt-5">
-                <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-settings text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Building tools</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </Col>
-                <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-ruler-pencil text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Grow your market</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </Col>
-                <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-atom text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Launch time</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </Col>
-              </Row>
+              <h4 className="display-3 text-white" >Contact Me </h4>
+              
+                   </Row>
             </Container>
             {/* SVG separator */}
             <div className="separator separator-bottom separator-skew zindex-100">
@@ -792,10 +449,9 @@ class Landing extends React.Component {
                 <Col lg="8">
                   <Card className="bg-gradient-secondary shadow">
                     <CardBody className="p-lg-5">
-                      <h4 className="mb-1">Want to work with us?</h4>
+                      <h4 className="mb-1">Want to contact with me ?</h4>
                       <p className="mt-0">
-                        Your project is very important to us.
-                      </p>
+                      Let's get in touch   </p>
                       <FormGroup
                         className={classnames("mt-5", {
                           focused: this.state.nameFocused
