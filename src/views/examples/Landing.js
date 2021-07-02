@@ -170,7 +170,7 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                         <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="fa fa-cookie" />
+                            <i className="fa fa-search" />
                           </div>
                           <h6 className="text-success text-uppercase">
                             Salmon Cookies
